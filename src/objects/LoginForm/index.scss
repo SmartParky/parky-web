@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese');
+
+.container{
+  width: 100%;
+  background-color: #ffffff;
+
+  .info {
+
+    .h6 {
+      width: 39px;
+      height: 20px;
+      font-family: SourceSansPro;
+      font-size: 16px;
+      font-weight: 900;
+    }
+
+    .h3 {
+      width: 198px;
+      height: 32px;
+      font-family: PlayfairDisplay;
+      font-size: 24px;
+      color: red;
+
+      .span {
+        color: red;
+      }
+    }
+  }
+}
