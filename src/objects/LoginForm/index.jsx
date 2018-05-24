@@ -7,54 +7,53 @@ import './index.css';
 export default class LoginForm extends React.Component {
   render() {
     return(
-      <form>
-        <div className="container">
-          <div className="row info">
-            <div classname="col-xs-12">
-              <h6>PARKY</h6>
-              <h3><span>OTOPARK</span>bulmanın</h3>
-              <h4 classname="second-text">Kolay yolu.</h4>
-              <p class="info-text">PRKY size en uygun ve en yakın otoparkı bularak işinizi kolaylaştırmayı hedefleyen bir uygulamadır.Bu uygulama ile otopark bulma telaşından kurtulacaksınız.</p>
-            </div>
-            <div classname="col-xs-12">
-              <div classname="email-input">
+      <form id="id_login_form">
+        <div className="row info">
+          <div className="col-xs-12">
+            <h5 className="parky-header">PARKY</h5>
+            <p className="first-text"><span>OTOPARK</span>bulmanın</p>
+            <p className="second-text">Kolay yolu.</p>
+            <p className="info-text">PRKY size en uygun ve en yakın otoparkı bularak işinizi kolaylaştırmayı hedefleyen bir uygulamadır.Bu uygulama ile otopark bulma telaşından kurtulacaksınız.</p>
+          </div>
+          <div classname="col-xs-12">
+            <input
+              type="text" id=""
+              className="email_address" name="email_address"
+              placeholder="Email Adress"/>
+          </div>
+          <div classname="col-xs-12">
+            <input
+              type="text" id=""
+              className="password" name="password"
+              placeholder="Password"/>
+          </div>
+          <div className="row bottom">
+            <div className="col-md-6 left">
               <input
-                type="text" id=""
-                className="email_address" name="email_address"
-                placeholder="Email Adress"/>
-              </div>
+                type="checkbox" id="id_remember_me"
+                className="RememberMe" name="RememberMe"/>
+                <label for="RememberMe">Remember Me</label>
+
             </div>
-            <div classname="col-xs-12">
-              <div classname="password-input">
-              <input
-                type="text" id=""
-                className="password" name="password"
-                placeholder="Password"/>
-              </div>
-            </div>
-            <div classname="col-xs-12">
-              <div classname="col-xs-6">
-                <div class="remember-me-left">
-                <input
-                  type="checkbox" id="id_remember_me"
-                  className="RememberMe" name="RememberMe"/>
-                  <label for="RememberMe">Remember Me</label>
-                </div>
-              </div>
-              <div classname="col-xs-6">
+            <div className="col-md-6 right">
+              <div classname="col-xs-5 col-sm-5 col-md-5 col-lg-5">
                 <div class="forgot-password">
                   <a href="*">Forgot password</a>
                 </div>
               </div>
             </div>
-            <div classname="col-xs-6">
+          </div>
+
+          <div className="buttons">
+            <div classname="col-xs-6 col-sm-6 col-md-3 col-lg-6">
               <button type="login-button">Login</button>
             </div>
-            <div classname="col-xs-6">
+            <div classname="col-xs-6 col-sm-6 col-md-3 col-lg-6">
               <button type="sign-up-button">Sign Up</button>
             </div>
-            <div classname="col-xs-12">
-            </div>
+          </div>
+
+          <div classname="col-xs-12">
           </div>
         </div>
       </form>
