@@ -12,7 +12,14 @@ export default class Login extends React.Component {
     return(
       <div className="container">
         <div className="row loginPage">
-          <LoginForm></LoginForm>
+          <div className="col-md-6">
+            <LoginForm></LoginForm>
+          </div>
+          <div className="col-md-6">
+            <img className="bg-item" src="/images/bg.png"/>
+            <img className="logo-item" src="/images/logo.png"/>
+            <p className="logo-text"><span>Kolay</span>Otopark</p>
+          </div>
         </div>
       </div>
     );

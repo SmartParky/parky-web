@@ -10,7 +10,7 @@ export default class LoginForm extends React.Component {
       <form id="id_login_form">
         <div className="row info">
           <div className="col-xs-12">
-            <h5 className="parky-header">PARKY</h5>
+            <h5 className="parky-header">PRKY</h5>
             <p className="first-text"><span>OTOPARK</span>bulmanın</p>
             <p className="second-text">Kolay yolu.</p>
             <p className="info-text">PRKY size en uygun ve en yakın otoparkı bularak işinizi kolaylaştırmayı hedefleyen bir uygulamadır.Bu uygulama ile otopark bulma telaşından kurtulacaksınız.</p>
@@ -21,39 +21,29 @@ export default class LoginForm extends React.Component {
               className="email_address" name="email_address"
               placeholder="Email Adress"/>
           </div>
-          <div classname="col-xs-12">
+          <div classname="col-md-12">
             <input
               type="text" id=""
               className="password" name="password"
               placeholder="Password"/>
           </div>
-          <div className="row bottom">
-            <div className="col-md-6 left">
+          <div className="col-md-12">
               <input
                 type="checkbox" id="id_remember_me"
                 className="RememberMe" name="RememberMe"/>
-                <label for="RememberMe">Remember Me</label>
-
-            </div>
-            <div className="col-md-6 right">
-              <div classname="col-xs-5 col-sm-5 col-md-5 col-lg-5">
-                <div class="forgot-password">
-                  <a href="*">Forgot password</a>
-                </div>
+              <label for="RememberMe">Remember Me</label>
+              <div class="forgot-password">
+                <a href="*">Forgot password</a>
               </div>
-            </div>
+          </div>
+          <div classname="col-md-12">
+            <button className="login-button" type="login-button"><p>Login</p></button>
+            <button className="sign-up-button" type="sign-up-button"><p>Sign Up</p></button>
           </div>
 
-          <div className="buttons">
-            <div classname="col-xs-6 col-sm-6 col-md-3 col-lg-6">
-              <button type="login-button">Login</button>
-            </div>
-            <div classname="col-xs-6 col-sm-6 col-md-3 col-lg-6">
-              <button type="sign-up-button">Sign Up</button>
-            </div>
-          </div>
-
-          <div classname="col-xs-12">
+          <div classname="col-md-12">
+            <p className="footer-top">By signing up,you agree to PARKY</p>
+            <p className="footer-bottom">Terms and Conditions <span>&</span> Privacy Policy</p>
           </div>
         </div>
       </form>
