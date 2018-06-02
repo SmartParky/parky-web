@@ -16,8 +16,8 @@ export default class Register extends React.Component {
             <RegisterForm></RegisterForm>
           </div>
           <div className="col-md-6">
-            <img className="bg-item" src="/images/bg.png"/>
-            <img className="logo-item" src="/images/logo.png"/>
+            <img className="bg-item" src="/images/login-background.png" alt="bg-logo"/>
+            <img className="logo-item" src="/images/logo.png" alt="logo"/>
             <p className="logo-text"><span>Kolay</span>Otopark</p>
           </div>
         </div>

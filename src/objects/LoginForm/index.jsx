@@ -15,13 +15,13 @@ export default class LoginForm extends React.Component {
             <p className="second-text">Kolay yolu.</p>
             <p className="info-text">PRKY size en uygun ve en yakın otoparkı bularak işinizi kolaylaştırmayı hedefleyen bir uygulamadır.Bu uygulama ile otopark bulma telaşından kurtulacaksınız.</p>
           </div>
-          <div classname="col-xs-12">
+          <div className="col-xs-12">
             <input
               type="text" id=""
               className="email_address" name="email_address"
               placeholder="Email Adress"/>
           </div>
-          <div classname="col-md-12">
+          <div className="col-md-12">
             <input
               type="text" id=""
               className="password" name="password"

@@ -1,0 +1,18 @@
+.footer
+{
+  .footer-image
+  {
+    z-index:-1;
+  }
+
+  .footer-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    width: 120px;
+    height: 120px;
+    z-index: 3;
+    object-fit: contain;
+  }
+}
