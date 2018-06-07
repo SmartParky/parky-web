@@ -10,6 +10,7 @@ import {
 import Login from './pages/Login/index';
 import Register from './pages/Register/index';
 import Homepage from './pages/Homepage/index';
+import InfoProfile from './pages/InfoProfile/index';
 import CreateRezervation from './pages/CreateRezervation/index';
 import Generic404 from './pages/Generic404/index';
 
@@ -22,6 +23,7 @@ const AppRouter = () => (
       <Route exact path="/" component={Login} />
       <Route exact path="/register/" component={Register} />
       <Route exact path="/homepage/" component={Homepage} />
+      <Route exact path="/info/" component={InfoProfile} />
       <Route exact path="/createRezervation/" component={CreateRezervation} />
       <Route exact path='*' component={Generic404} />
     </Switch>
