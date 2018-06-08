@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i,800,800i&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese');
 
 .register{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
   h5 {
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
@@ -32,7 +35,7 @@
   span {
     font-family: PlayfairDisplay;
     color: #4a4a4a;
-    margin: 0px 0px 35px 15px;
+    margin: 0px 0px 0px 0px;
   }
 
   .name-input {
@@ -44,7 +47,7 @@
       background-color: #ffffff;
       border: solid 1px #d0c8c8;
       border-left: solid 4px #f8e71c;
-      margin: 50px 0px 0px 15px;
+      margin: 30px 0px 0px 15px;
     }
   }
 
@@ -136,7 +139,7 @@
         line-height: normal;
         letter-spacing: normal;
         color: #4a4a4a;
-        margin: 90px 0px 0px 0px;
+        margin: 50px 0px 0px 0px;
         padding-left: 20px;
       }
 

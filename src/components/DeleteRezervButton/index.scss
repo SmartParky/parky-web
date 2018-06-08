@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i,800,800i&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese');
 .delete-button {
-  width: 98px;
+  width: 67%;
   height: 20px;
   background-color: #f8e71c;
-  margin: 20px 0px 10px 2px;
+  margin: 10px 0px 5px 0px;
+  float: left;
 
   p {
     width: 100%;
@@ -16,7 +17,7 @@
     line-height: normal;
     letter-spacing: normal;
     color: #000000;
-    padding: 10px;
-    text-align: center;
+    padding: 2px;
+    text-align: left;
   }
 }

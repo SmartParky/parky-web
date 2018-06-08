@@ -3,7 +3,6 @@ import React from 'react';
 
 //Objects
 import Header from '../../objects/Header/index';
-import AccountMenu from '../../objects/AccountMenu/index';
 import SearchButton from '../../components/SearchButton/index';
 import Footer from '../../objects/Footer/index';
 

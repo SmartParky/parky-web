@@ -10,7 +10,7 @@ export default class SearchButton extends React.Component {
       <div className="container">
         <div className="row deleteRezerv-button">
           <div className="col-xs-12">
-            <button className="delete-button" type="delete-button"><p>Rezervasyon Oluştur</p></button>
+            <button className="delete-button" type="delete-button"><p>Rezervasyonu Sil</p></button>
           </div>
         </div>
       </div>

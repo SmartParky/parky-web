@@ -28,10 +28,10 @@ export default class LoginForm extends React.Component {
               placeholder="Password"/>
           </div>
           <div className="col-md-12">
-              <input
-                type="checkbox" id="id_remember_me"
-                className="RememberMe" name="RememberMe"/>
-              <label for="RememberMe">Remember Me</label>
+              <div class="remember-me">
+                <input type="checkbox" id="id_remember_me" name="RememberMe"/>
+                <label for="RememberMe">Remember Me</label>
+              </div>
               <div class="forgot-password">
                 <a href="*">Forgot password</a>
               </div>

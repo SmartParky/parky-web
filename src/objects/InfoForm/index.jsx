@@ -4,6 +4,9 @@ import React from 'react';
 // Local Modules
 import './index.css';
 
+//Objects
+import PastRezervations from '../../objects/PastRezervations/index';
+
 export default class InfoForm extends React.Component {
   render() {
     return(
@@ -67,7 +70,10 @@ export default class InfoForm extends React.Component {
                 <button type="submit" className="reservation-button">Rezervasyon Oluştur</button>
               </div>
               <div className="col-xs-6">
-                <button type="submit" className="save-button">Bilgilerimi Kaydet</button>
+                <button type="submit" className="save-button"><a href="CreateRezervation"></a>Bilgilerimi Kaydet</button>
+              </div>
+              <div className="col-xs-12">
+                <PastRezervations></PastRezervations>
               </div>
             </div>
           </div>
