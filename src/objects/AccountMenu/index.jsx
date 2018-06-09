@@ -26,7 +26,7 @@ export default class Example extends React.Component {
           Betül Yorgancı
         </DropdownToggle>
         <DropdownMenu className="account-menu-item">
-          <DropdownItem className="account-button"><a href="/info">Profil</a></DropdownItem>
+          <DropdownItem className="account-button"><a href="info">Profil</a></DropdownItem>
           <DropdownItem divider />
           <DropdownItem className="account-button"><a href="#">Hakkımızda</a></DropdownItem>
           <DropdownItem divider />
