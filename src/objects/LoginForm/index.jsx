@@ -146,7 +146,7 @@ render() {
               </div>
           </div>
           <div classname="col-md-12">
-            <Link to="/">
+            <Link to="/homepage/">
               <button className="login-button" type="login-button"><p>Login</p></button>
             </Link>
             <Link to="/register/">

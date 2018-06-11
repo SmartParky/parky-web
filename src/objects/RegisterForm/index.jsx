@@ -20,10 +20,12 @@ constructor() {
   super();
   this.state = {
     redirect: false,
+    city:"",
     email: "",
     first_name: "",
     last_name: "",
     password: "",
+    phone_number:"",
     confirm_password: "",
     errors: {}
   };
@@ -112,7 +114,7 @@ onSubmit = (e) => {
   }
 
     return(
-      <form>
+      <form id="id_register_form" onSubmit={this.onSubmit} onReset={this.onReset}>
         <div className="container">
           <div className="row register">
             <div className="col-xs-12">
@@ -208,7 +210,7 @@ onSubmit = (e) => {
               </div>
             </div>
             <div className="col-xs-12">
-              <Link to="/">
+              <Link to="/login/">
                 <button className="contunie-button" type="contunie-button"><p>Contunie</p></button>
               </Link>
               <Link to="/register/">
