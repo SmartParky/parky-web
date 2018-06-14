@@ -20,60 +20,61 @@ const HTTP_204_NO_CONTENT = 204;
 const HTTP_400_BAD_REQUEST = 400;
 
 function setAuthInformations(auth_token, user_id) {
-  if (auth_token && user_id) {
-    localStorage.setItem("auth_token", auth_token);
-    localStorage.setItem("user_id", user_id);
+ if (auth_token && user_id) {
+   localStorage.setItem("auth_token", auth_token);
+   localStorage.setItem("user_id", user_id);
 
-    return true;
-  } else {
-    return false;
-  }
+   return true;
+ } else {
+   return false;
+ }
 }
 
 function getAuthInformations() {
-  var auth_informations = {
-    "auth_token": localStorage.getItem("auth_token"),
-    "user_id": localStorage.getItem("user_id")
-  }
+ var auth_informations = {
+   "auth_token": localStorage.getItem("auth_token"),
+   "user_id": localStorage.getItem("user_id")
+ }
 
-  return auth_informations
+ return auth_informations
 }
 
 function removeAuthInformations() {
-  localStorage.removeItem("auth_token");
-  localStorage.removeItem("user_id");
+ localStorage.removeItem("auth_token");
+ localStorage.removeItem("user_id");
 }
 
 function isAuthentication() {
-  var auth_token = localStorage.getItem("auth_token");
-  var user_id = localStorage.getItem("user_id");
+ var auth_token = localStorage.getItem("auth_token");
+ var user_id = localStorage.getItem("user_id");
 
-  if (auth_token && user_id) {
-    return true;
-  } else {
-    return false;
-  }
+ if (auth_token && user_id) {
+   return true;
+ } else {
+   return false;
+ }
 }
 
 
 module.exports = {
-  request,
-  alertify,
-  url,
-  api_url,
-  api_auth_login_url,
-  api_users_url,
-  api_cars_url,
-  api_cities_url,
-  api_parks_url,
-  api_rezervations_url,
-  api_workinghours_url,
-  HTTP_200_OK,
-  HTTP_201_CREATED,
-  HTTP_204_NO_CONTENT,
-  HTTP_400_BAD_REQUEST,
-  setAuthInformations,
-  getAuthInformations,
-  removeAuthInformations,
-  isAuthentication
+ request,
+ alertify,
+ url,
+ api_url,
+ api_auth_login_url,
+ api_users_url,
+ api_cars_url,
+ api_cities_url,
+ api_parks_url,
+ api_rezervations_url,
+ api_workinghours_url,
+ HTTP_200_OK,
+ HTTP_201_CREATED,
+ HTTP_204_NO_CONTENT,
+ HTTP_400_BAD_REQUEST,
+ setAuthInformations,
+ getAuthInformations,
+ removeAuthInformations,
+ isAuthentication,
+
 }

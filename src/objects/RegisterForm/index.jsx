@@ -26,7 +26,6 @@ constructor() {
     last_name: "",
     password: "",
     phone_number:"",
-    confirm_password: "",
     errors: {}
   };
 
@@ -61,11 +60,12 @@ setRedirect = (e) => {
 
 onReset = (e) => {
   this.setState({
+    city:"",
     email: "",
     first_name: "",
     last_name: "",
+    phone_number:"",
     password: "",
-    confirm_password: "",
     errors: {}
   });
 }
@@ -73,11 +73,11 @@ onReset = (e) => {
 onSubmit = (e) => {
   e.preventDefault();
   var data = {
+    city: this.state.city,
     email: this.state.email,
     first_name: this.state.first_name,
     last_name: this.state.last_name,
-    password: this.state.password,
-    confirm_password: this.state.confirm_password
+    password: this.state.password
   };
 
   createUser(data, (response) => {
@@ -122,12 +122,20 @@ onSubmit = (e) => {
               <h3 className="easy"><span>Kayıt</span> ol</h3>
             </div>
             <div className="col-xs-12">
-              <div className="city-input">
-              <input
-                type="text" id="id_city"
-                className="city-box" name="city"
-                placeholder="city"
-                value={city} onChange={this.onChange}/>
+              <div className="city-select">
+              <select className="city">
+                <option hidden>city</option>
+                <option value="city">Adana</option>
+                <option value="city">Ankara</option>
+                <option value="city">Bursa</option>
+                <option value="city">Çanakkale</option>
+                <option value="city">Denizli</option>
+                <option value="city">Edirne</option>
+                <option value="city">Giresun</option>
+                <option value="city">Hatay</option>
+                <option value="city">İstanbul</option>
+                <option value="city">İzmir</option>
+              </select>
               {errors.city &&
                 <div className="input-feedback">
                   {errors.city.map((error, index) =>

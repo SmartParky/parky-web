@@ -103,31 +103,40 @@ render() {
 
     return(
       <form id="id_login_form" onSubmit={this.onSubmit} onReset={this.onReset}>
+
         <div className="row info">
+
           <div className="col-xs-12">
             <h5 className="parky-header">PRKY</h5>
             <p className="first-text"><span>OTOPARK</span>bulmanın</p>
             <p className="second-text">Kolay yolu.</p>
             <p className="info-text">PRKY size en uygun ve en yakın otoparkı bularak işinizi kolaylaştırmayı hedefleyen bir uygulamadır.Bu uygulama ile otopark bulma telaşından kurtulacaksınız.</p>
           </div>
+
           <div className="col-xs-12">
-            <input
-              type="text" id="id_email"
-              className="email_address" name="email_address"
-              placeholder="Email Adress" value={email} onChange={this.onChange} />
-            {errors.email &&
-              <div className="input-feedback">
-                {errors.email.map((error, index) =>
-                  <span key={index}>{error}</span>
-                )}
-              </div>
-            }
+            <div className="email-input">
+              <input
+                type="text" id="id_email"
+                className="email-box" name="email"
+                placeholder="Email Adress"
+                value={email} onChange={this.onChange}/>
+              {errors.email &&
+                <div className="input-feedback">
+                  {errors.email.map((error, index) =>
+                    <span key={index}>{error}</span>
+                  )}
+                </div>
+              }
+            </div>
           </div>
+
           <div className="col-md-12">
+            <div className="password-input">
             <input
               type="text" id="id_password"
-              className="password" name="Password"
-              placeholder="Password" value={password} onChange={this.onChange} />
+              className="password" name="password"
+              placeholder="Password"
+              value={password} onChange={this.onChange}/>
             {errors.password &&
               <div className="input-feedback">
                 {errors.password.map((error, index) =>
@@ -135,17 +144,20 @@ render() {
                 )}
               </div>
             }
+            </div>
           </div>
+
           <div className="col-md-12">
-              <div class="remember-me">
-                <input type="checkbox" id="id_remember_me" name="RememberMe"/>
-                <label for="RememberMe">Remember Me</label>
-              </div>
-              <div class="forgot-password">
-                <a href="*">Forgot password</a>
-              </div>
+            <div className="remember-me">
+              <input type="checkbox" id="id_remember_me" name="RememberMe"/>
+              <label htmlFor="RememberMe">Remember Me</label>
+            </div>
+            <div className="forgot-password">
+              <a href="*">Forgot password</a>
+            </div>
           </div>
-          <div classname="col-md-12">
+
+          <div className="col-md-12">
             <Link to="/homepage/">
               <button className="login-button" type="login-button"><p>Login</p></button>
             </Link>
@@ -154,10 +166,11 @@ render() {
             </Link>
           </div>
 
-          <div classname="col-md-12">
+          <div className="col-md-12">
             <p className="footer-top">By signing up,you agree to PARKY</p>
             <p className="footer-bottom">Terms and Conditions <span>&</span> Privacy Policy</p>
           </div>
+
         </div>
       </form>
     );

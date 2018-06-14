@@ -1,5 +1,6 @@
 // Packages
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Modal from 'react-modal';
 
 //Components
@@ -19,6 +20,7 @@ const customStyles = {
   }
 };
 
+Modal.setAppElement("#root");
 export default class PastRezervations extends React.Component {
   constructor() {
     super();
@@ -28,7 +30,6 @@ export default class PastRezervations extends React.Component {
     };
 
     this.openModal = this.openModal.bind(this);
-    this.afterOpenModal = this.afterOpenModal.bind(this);
     this.closeModal = this.closeModal.bind(this);
   }
 
@@ -36,10 +37,6 @@ export default class PastRezervations extends React.Component {
     this.setState({modalIsOpen: true});
   }
 
-  afterOpenModal() {
-    // references are now sync'd and can be accessed.
-    this.subtitle.style.color = '#ff5151';
-  }
 
   closeModal() {
     this.setState({modalIsOpen: false});
@@ -48,10 +45,9 @@ export default class PastRezervations extends React.Component {
   render() {
     return(
       <div className="pastRezervation">
-        <button className="save-rezervation" onClick={this.openModal}>Geçmiş Rezervasyonlarım</button>
+        <Link to="#" className="save-rezervation" onClick={this.openModal}>Geçmiş Rezervasyonlarım</Link>
         <Modal
         isOpen={this.state.modalIsOpen}
-        onAfterOpen={this.afterOpenModal}
         onRequestClose={this.closeModal}
         style={customStyles}
         >

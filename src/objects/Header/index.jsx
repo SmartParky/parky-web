@@ -16,7 +16,7 @@ export default class Header extends React.Component {
           <div className="col-xs-12">
             <img src="/images/header-image.png" alt="header"/>
               <AccountMenu></AccountMenu>
-              <h1 className="header-text"><a href="/">PRKY</a></h1>
+              <h1 className="header-text"><a href="/login/">PRKY</a></h1>
           </div>
         </div>
       </div>

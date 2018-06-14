@@ -1,6 +1,7 @@
 // Packages
 import React from 'react';
 
+import { Link } from 'react-router-dom';
 // Local Modules
 import './index.css';
 
@@ -70,7 +71,9 @@ export default class InfoForm extends React.Component {
                 <button type="submit" className="reservation-button">Rezervasyon Oluştur</button>
               </div>
               <div className="col-xs-6">
-                <button type="submit" className="save-button"><a href="CreateRezervation"></a>Bilgilerimi Kaydet</button>
+                <Link to="/createRezervation/">
+                  <button type="submit" className="save-button">Bilgilerimi Kaydet</button>
+                </Link>
               </div>
               <div className="col-xs-12">
                 <PastRezervations></PastRezervations>
